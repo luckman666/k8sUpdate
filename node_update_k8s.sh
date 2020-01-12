@@ -93,7 +93,10 @@ updateimage(){
     
 }
 
-
+clear(){
+cd $bash_path
+rm -rf base.config node_update_k8s.sh
+}
 
 main(){
  set_repo
@@ -101,6 +104,8 @@ main(){
  updateimage
 
  echo `hostname`" 节点已经升级完毕"
+ 
  kubectl get node 
+ clear
 }
 main > ./setup.log 2>&1
