@@ -12,7 +12,7 @@ fi
 
 
 yum list --showduplicates kubeadm --disableexcludes=kubernetes
-echo -e "\033[31m 你好好核对一下你写的版本号对不对？如果有问题ctrl+C停止脚本重新编写参数！Please continue to enter or ctrl+C to cancel \033[0m"
+echo -e "\033[31m 你好好核对一下你写的版本号对不对？如果有问题ctrl+C停止脚本重新编写参数，觉得不错记得关注波哥的IT人生公众号哦！Please continue to enter or ctrl+C to cancel \033[0m"
 sleep 5
 #yum update
 
